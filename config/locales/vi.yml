@@ -61,6 +61,7 @@ vi:
       signupnow: "Đăng ký ngay bây giờ!"
       title: "Đăng nhập"
       login: "ĐĂNG NHẬP"
+      remember: "Ghi nhớ đăng nhập."
   model:
     user:
       name: "Tên"
