@@ -42,3 +42,11 @@ vi:
       application: "Ứng dụng mẫu"
       english: "Tiếng Anh"
       vietnam: "Tiếng Việt"
+  users:
+    new:
+      create: "Tạo tài khoản"
+      title: "Đăng ký"
+      confirm: "Xác nhận mật khẩu"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"

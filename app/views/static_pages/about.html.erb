@@ -1,4 +1,4 @@
-<% provide(:title, (t ".title")) %>
+<% provide(:title, t(".title")) %>
 <h1><%= t ".title" %></h1>
 <p>
   <a href="http://www.railstutorial.org/"><em><%= t ".tutorial" %></em></a> <%= t ".is" %>
@@ -8,5 +8,3 @@
   <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   <%= t ".intro" %>
 </p>
-<%= link_to (t "layout.english"), locale:"en" %>
-<%= link_to (t "layout.vietnam"), locale:"vi" %>
