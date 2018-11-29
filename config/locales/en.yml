@@ -15,6 +15,11 @@ en:
     Help: "Help"
     Signupnow: "Sign up now"
     Signup: "Sign up"
+    account: "Account"
+    users: "Users"
+    profile: "Profile"
+    settings: "Settings"
+    logout: "Log out"
   static_pages:
     about:
       book: "book"
@@ -48,3 +53,30 @@ en:
       name: "Name"
       email: "Email"
       password: "Password"
+      validate:
+        name:
+          presence: "Name can't not be empty!"
+          long: "%{count} characters is the maximum allowed"
+  sessions:
+    new:
+      newuser: "New user?"
+      signupnow: "Sign up now!"
+      title: "Log in"
+      login: "LOG IN"
+  model:
+    user:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+  activerecord:
+    attributes:
+      user:
+        email: "E-mail address"
+        password: "Password"
+        name: "Name"
+  errors:
+    error: "error"
+    counterror: "Form content"
+  flash:
+    welcome: "Welcome to the sample app!"
+    login_error: "Invalid email/pasword combination"
