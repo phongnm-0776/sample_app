@@ -2,7 +2,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token
   has_secure_password
   validates :password, presence: true,
-  length: {minimum: Settings.users.password.min_length}
+  length: {minimum: Settings.users.password.min_length}, allow_nil: true
   before_save{email.downcase!}
   validates :name, presence: true,
   length: {maximum: Settings.users.name.max_length}

@@ -17,6 +17,10 @@ module SessionsHelper
     @current_user = nil
   end
 
+  def current_user? user
+    user == current_user
+  end
+
   def current_user
     if (user_id = session[:user_id])
       @current_user ||= User.find_by(id: user_id)
@@ -43,12 +47,27 @@ module SessionsHelper
   def login_user params
     if @user && @user.authenticate(params[:session][:password])
       log_in @user
-      params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
-      redirect_to @user
+      if params[:session][:remember_me] == Settings.users.remember.chosen
+        remember(@user)
+      else
+        forget(@user)
+      end
+      redirect_back_or @user
     else
       flash.now[:danger] = t "flash.login_error"
       # Create an error message.
       render :new
     end
+  end
+
+  # Redirects to stored location (or to the default).
+  def redirect_back_or default
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+
+  # Stores the URL trying to be accessed.
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 end
