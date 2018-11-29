@@ -1,12 +1,25 @@
 vi:
-  dictionary:
-    titlebase: Ứng dụng mẫu cho ruby on rails
+  layout:
+    titlebase: "Ứng dụng mẫu cho ruby on rails"
+    App: "Ứng dụng mẫu"
     english: "Tiếng Anh"
     vietnam: "Tiếng Việt"
+    tutorial: "Hướng dẫn Ruby on Rails"
+    The: ""
+    by: "bởi"
+    About: "Thông tin"
+    Contact: "Liên hệ"
+    News: "Tin tức"
+    Home: "Trang chủ"
+    Login: "Đăng nhập"
+    Help: "Trợ giúp"
+    Signupnow: "Đăng ký ngay bây giờ"
+    Signup: "Đăng ký"
   static_pages:
     about:
       book: "sách"
       intro: "Đây là ứng dụng mẫu cho bài hướng dẫn."
+      tutorial: "Hướng dẫn Ruby on Rails"
       is: "là một"
       screencast: "chuỗi thu hình"
       teach: "để dạy lập trình web với"

@@ -1,13 +1,12 @@
 <% provide(:title, (t ".title")) %>
 <h1><%= t ".title" %></h1>
 <p>
-  The <a href="http://www.railstutorial.org/"><em><%= t ".tutorial" %></em></a> <%= t ".is" %>
+  <a href="http://www.railstutorial.org/"><em><%= t ".tutorial" %></em></a> <%= t ".is" %>
   <a href="http://www.railstutorial.org/book"><%= t ".book" %></a> &
   <a href="http://screencasts.railstutorial.org/"><%= t ".screencast" %></a>
   <%= t ".teach" %>
   <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   <%= t ".intro" %>
 </p>
-<%= link_to (t "dictionary.english"), locale:"en" %>
-<%= link_to (t "dictionary.vietnam"), locale:"vi" %>
-
+<%= link_to (t "layout.english"), locale:"en" %>
+<%= link_to (t "layout.vietnam"), locale:"vi" %>

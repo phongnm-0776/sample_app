@@ -1,11 +1,24 @@
 en:
-  dictionary:
-    titlebase: Ruby on Rails Tutorial Sample App
+  layout:
+    titlebase: "Ruby on Rails Tutorial Sample App"
+    App: "Sample App"
     english: "English"
     vietnam: "VietNamese"
+    tutorial: "Ruby on Rails Tutorial"
+    The: "The "
+    by: "by"
+    About: "About"
+    Contact: "Contact"
+    News: "News"
+    Home: "Home"
+    Login: "Log in"
+    Help: "Help"
+    Signupnow: "Sign up now"
+    Signup: "Sign up"
   static_pages:
     about:
       book: "book"
+      tutorial: "Ruby on Rails Tutorial"
       intro: "This is the sample application for the tutorial."
       is: "is a"
       screencast: "screencast series"
@@ -27,3 +40,4 @@ en:
       tutorial: "Ruby on Rails Tutorial"
       application: "sample application"
       title: "Home"
+
