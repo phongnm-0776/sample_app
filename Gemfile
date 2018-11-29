@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "rubocop", "~> 0.54.0", require: false
 gem 'rails',        '5.1.6'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
