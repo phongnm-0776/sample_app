@@ -40,4 +40,11 @@ en:
       tutorial: "Ruby on Rails Tutorial"
       application: "sample application"
       title: "Home"
-
+  users:
+    new:
+      create: "Create my account"
+      title: "Sign up"
+      confirm: "Confirmation"
+      name: "Name"
+      email: "Email"
+      password: "Password"
