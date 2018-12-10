@@ -9,4 +9,15 @@ class User < ApplicationRecord
   validates :email, presence: true,
   length: {maximum: Settings.users.name.max_length},
   format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
+
+  # Returns the hash digest of the given string.
+  def self.digest string
+    cost =
+      if ActiveModel::SecurePassword.min_cost
+        BCrypt::Engine::MIN_COST
+      else
+        BCrypt::Engine.cost
+      end
+    BCrypt::Password.create(string, cost: cost)
+  end
 end

@@ -11,10 +11,15 @@ vi:
     Contact: "Liên hệ"
     News: "Tin tức"
     Home: "Trang chủ"
-    Login: "Đăng nhập"
+    login: "Đăng nhập"
     Help: "Trợ giúp"
     Signupnow: "Đăng ký ngay bây giờ"
     Signup: "Đăng ký"
+    account: "Tài khoản"
+    users: "Người dùng"
+    profile: "Hồ sơ"
+    settings: "Cài đặt"
+    logout: "Đăng xuất"
   static_pages:
     about:
       book: "sách"
@@ -50,3 +55,53 @@ vi:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
+  sessions:
+    new:
+      newuser: "Chưa có tài khoản?"
+      signupnow: "Đăng ký ngay bây giờ!"
+      title: "Đăng nhập"
+      login: "ĐĂNG NHẬP"
+  model:
+    user:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+  errors:
+    error: "lỗi"
+    counterror: "Thông tin bạn vừa nhập có"
+    format: "%{attribute} %{message}"
+    messages:
+      blank: "không được bỏ trống."
+      too_short: quá ngắn (ít nhất %{count} kí tự)
+      accepted: phải được chấp nhận.
+      present: phải bỏ trống.
+      confirmation: không trùng với %{attribute}.
+      empty: không được bỏ trống.
+      equal_to: phải bằng %{count}.
+      greater_than: phải lớn hơn %{count}.
+      greater_than_or_equal_to: phải lớn hơn hoặc bằng %{count}.
+      invalid: không hợp lệ.
+      less_than: phải nhỏ hơn %{count}.
+      less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}.
+      not_a_number: không nhập vào 1 số.
+      not_an_integer: phải là số nguyên.
+      required: là bắt buột.
+      taken: đã được sử dụng.
+      too_long:
+        one: quá dài (tối đa 1 kí tự ).
+        other: quá dài (tối đa %{count} kí tự ).
+      too_short:
+        one: quá ngắn (ít nhất 1 kí tự).
+        other: quá ngắn (ít nhất %{count} kí tự).
+      wrong_length:
+        one: chỉ được 1 kí tư.
+        other: chỉ được %{count} kí tự.
+  flash:
+    welcome: "Chào mừng đến với ứng dụng mẫu ruy on rails!"
+    login_error: "Tài khảon hoặc mật khẩu không đúng!"
