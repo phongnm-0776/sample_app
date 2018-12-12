@@ -49,14 +49,14 @@ en:
     new:
       create: "Create my account"
       title: "Sign up"
-      confirm: "Confirmation"
-      name: "Name"
-      email: "Email"
-      password: "Password"
-      validate:
-        name:
-          presence: "Name can't not be empty!"
-          long: "%{count} characters is the maximum allowed"
+    edit:
+      title: Update your profile
+      update: UPDATE
+    index:
+      title: All Users
+    user:
+      confirm: "You sure?"
+      delete: "Delete"
   sessions:
     new:
       newuser: "New user?"
@@ -69,6 +69,7 @@ en:
       name: "Name"
       email: "Email"
       password: "Password"
+      confirmation: "Confirm password"
   activerecord:
     attributes:
       user:
@@ -81,3 +82,12 @@ en:
   flash:
     welcome: "Welcome to the sample app!"
     login_error: "Invalid email/pasword combination"
+    updated: "Profile updated"
+    deleted: "User deleted"
+    notlogin: "Please log in"
+    nouser: "User not found!"
+    delete_fail: "Failed to delete user!"
+    not_active_user: "Account not activated. "
+    activation_mail: "Check your email for the activation link."
+    active_success: "Active user success!"
+    active_fail: "Active false! invalid link."

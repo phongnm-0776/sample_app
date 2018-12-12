@@ -11,6 +11,10 @@ users:
   show:
     gravatar:
       size: 50
+  index:
+    perpage: 20
+  remember:
+    chosen: "1"
 gravatar:
   default_size: 80
 
