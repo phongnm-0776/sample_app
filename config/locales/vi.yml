@@ -20,6 +20,9 @@ vi:
     profile: "Hồ sơ"
     settings: "Cài đặt"
     logout: "Đăng xuất"
+  will_paginate:
+    next_label: "Trang sau"
+    previous_label: "Trang trước"
   static_pages:
     about:
       book: "sách"
@@ -51,10 +54,14 @@ vi:
     new:
       create: "Tạo tài khoản"
       title: "Đăng ký"
-      confirm: "Xác nhận mật khẩu"
-      name: "Tên"
-      email: "Email"
-      password: "Mật khẩu"
+    edit:
+      title: "Cập nhật tài khoản"
+      update: "Cập nhật"
+    index:
+      title: "Danh sách người dùng"
+    user:
+      confirm: "Bạn chắc chắn?"
+      delete: "xóa"
   sessions:
     new:
       newuser: "Chưa có tài khoản?"
@@ -67,6 +74,7 @@ vi:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
   activerecord:
     attributes:
       user:
@@ -106,3 +114,8 @@ vi:
   flash:
     welcome: "Chào mừng đến với ứng dụng mẫu ruy on rails!"
     login_error: "Tài khảon hoặc mật khẩu không đúng!"
+    updated: "Cập nhật thông tin thành công"
+    deleted: "Xóa người dùng thành công"
+    notlogin: "Xin hảy đăng nhập"
+    nouser: "Người dùng không tồn tại!"
+    delete_fail: "Xóa ngưòi dùng không thành công"
