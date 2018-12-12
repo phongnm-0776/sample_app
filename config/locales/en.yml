@@ -63,6 +63,7 @@ en:
       signupnow: "Sign up now!"
       title: "Log in"
       login: "LOG IN"
+      remember: "Remember me on this computer."
   model:
     user:
       name: "Name"
