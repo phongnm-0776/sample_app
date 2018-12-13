@@ -8,28 +8,26 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.paginate page: params[:page],
+    @users = User.where(activated: true).paginate page: params[:page],
       per_page: Settings.users.index.per_page
   end
 
   def show
-    # load_user
-    redirect_to signup_path if @user.nil?
+    redirect_to signup_path unless @user.present? || @user.activated
   end
 
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "flash.welcome"
-      redirect_to user_path @user
+      @user.send_activation_email
+      flash[:info] = t "flash.activation_mail"
+      redirect_to root_url
     else
       render :new
     end
   end
 
   def edit
-    # load_user
     redirect_to login_path if @user.nil?
   end
 
@@ -44,7 +42,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    # load_user
     if @user.destroy
       flash[:success] = t "flash.deleted"
     elsif @user.nil?

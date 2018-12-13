@@ -87,3 +87,7 @@ en:
     notlogin: "Please log in"
     nouser: "User not found!"
     delete_fail: "Failed to delete user!"
+    not_active_user: "Account not activated. "
+    activation_mail: "Check your email for the activation link."
+    active_success: "Active user success!"
+    active_fail: "Active false! invalid link."

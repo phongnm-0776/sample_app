@@ -119,3 +119,7 @@ vi:
     notlogin: "Xin hảy đăng nhập"
     nouser: "Người dùng không tồn tại!"
     delete_fail: "Xóa ngưòi dùng không thành công"
+    not_active_user: "Tài khoản chưa được kích hoạt."
+    activation_mail: "Kiểm tra email để nhận link kích hoạt."
+    active_success: "Kích hoạt tài khoản thành công."
+    active_fail: "Kích hoạt thất bại, link không hợp lệ."
