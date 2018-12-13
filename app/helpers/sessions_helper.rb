@@ -26,7 +26,7 @@ module SessionsHelper
       @current_user ||= User.find_by(id: user_id)
     elsif (user_id = cookies.signed[:user_id])
       user = User.find_by(id: user_id)
-      if user && user.authenticated?(cookies[:remember_token])
+      if user && user.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -44,15 +44,24 @@ module SessionsHelper
     cookies.permanent[:remember_token] = user.remember_token
   end
 
+  def login_check user, params
+    if user.activated?
+      log_in user
+      if params[:session][:remember_me] == Settings.users.remember.chosen
+        remember user
+      else
+        forget user
+      end
+      redirect_back_or user
+    else
+      flash[:warning] = t "flash.not_active_user"
+      redirect_to root_url
+    end
+  end
+
   def login_user params
     if @user && @user.authenticate(params[:session][:password])
-      log_in @user
-      if params[:session][:remember_me] == Settings.users.remember.chosen
-        remember(@user)
-      else
-        forget(@user)
-      end
-      redirect_back_or @user
+      login_check @user, params
     else
       flash.now[:danger] = t "flash.login_error"
       # Create an error message.
@@ -63,7 +72,7 @@ module SessionsHelper
   # Redirects to stored location (or to the default).
   def redirect_back_or default
     redirect_to(session[:forwarding_url] || default)
-    session.delete(:forwarding_url)
+    session.delete :forwarding_url
   end
 
   # Stores the URL trying to be accessed.

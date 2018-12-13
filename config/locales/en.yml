@@ -64,6 +64,15 @@ en:
       title: "Log in"
       login: "LOG IN"
       remember: "Remember me on this computer."
+      forgot: "Forgot password???"
+  password_resets:
+    new:
+      title: "Reset password"
+      base_title: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
   model:
     user:
       name: "Name"
@@ -87,3 +96,24 @@ en:
     notlogin: "Please log in"
     nouser: "User not found!"
     delete_fail: "Failed to delete user!"
+    not_active_user: "Account not activated. "
+    activation_mail: "Check your email for the activation link."
+    active_success: "Active user success!"
+    active_fail: "Active false! invalid link."
+    email_reset: "Email sent with password reset instructions"
+    wrong_email: "Email not found"
+    expire_reset: "Password reset has expired."
+    success_reset: "Password reset success."
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      hello: "Hi "
+      active: "Active"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password_reset:
+      subject: "Password reset"
+      instruction: "To reset your password click the link below:"
+      expire: This link will expire in two hours.
+      warning: "If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
+
