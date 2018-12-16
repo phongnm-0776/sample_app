@@ -3,7 +3,7 @@ vi:
     distance_in_words:
       about_x_hours: khoảng %{count} giờ
   layout:
-    titlebase: "Ứng dụng mẫu cho ruby on rails"
+    titlebase: "Ứng dụng mẫu cho ruby on railsaaa"
     App: "Ứng dụng mẫu"
     english: "Tiếng Anh"
     vietnam: "Tiếng Việt"
@@ -61,6 +61,9 @@ vi:
     micropost_form:
       compose: "Soạn thảo bài viết ..."
       post: "Đăng Bài"
+    stats:
+      followers: "Người theo dõi"
+      following: "Đang theo dõi"
   microposts:
     micropost:
       ago:  " trước"
@@ -81,6 +84,13 @@ vi:
     user:
       confirm: "Bạn chắc chắn?"
       delete: "xóa"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+    show_follow:
+      profile_link: "Về trang của bạn"
+      microposts: "Bài viết"
   sessions:
     new:
       newuser: "Chưa có tài khoản?"
@@ -103,6 +113,8 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
+      followers: "Người theo dõi"
+      following: "Đang theo dõi"
   activerecord:
     attributes:
       user:

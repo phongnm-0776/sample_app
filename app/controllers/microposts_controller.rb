@@ -28,7 +28,7 @@ class MicropostsController < ApplicationController
   def correct_user
     @micropost = current_user.microposts.find_by(id: params[:id])
     return if @micropost
-    redirect_to request.referrer || root_url
     flash[:error] = t "flash.micropost.not_found"
+    redirect_to request.referrer || root_url
   end
 end

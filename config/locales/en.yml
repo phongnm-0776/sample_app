@@ -53,7 +53,10 @@ en:
     micropost_form:
       compose: "Compose micropost ..."
       post: "Post"
-      size_max: "Maximum file size is <%= Settings.micropost.picture.max_size %> MB. Please choose a smaller file."
+      size_max: "Maximum file size is 5 MB. Please choose a smaller file."
+    stats:
+      followers: "Followers"
+      following: "following"
   microposts:
     micropost:
       ago:  " ago"
@@ -76,6 +79,13 @@ en:
     user:
       confirm: "You sure?"
       delete: "Delete"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      profile_link: "Về trang của bạn"
+      microposts: "Bài viết"
   sessions:
     new:
       newuser: "New user?"
@@ -98,6 +108,8 @@ en:
       email: "Email"
       password: "Password"
       confirmation: "Confirm password"
+      followers: "Followers"
+      following: "Following"
   activerecord:
     attributes:
       user:
