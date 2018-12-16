@@ -19,3 +19,9 @@ gravatar:
   default_size: 80
 password_reset:
   expire_time: 2
+micropost:
+  content:
+    max_length: 140
+  picture:
+    max_size: 5
+    type: "image/jpeg,image/gif,image/png"
