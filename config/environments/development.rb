@@ -59,4 +59,5 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: host, protocol: "http" }
   # Use this if developing on localhost.
   # config.action_mailer.default_url_options = { host: host, protocol: "http" }
+  config.middleware.use I18n::JS::Middleware
 end
