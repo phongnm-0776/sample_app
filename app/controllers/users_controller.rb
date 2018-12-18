@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      @user.send_activation_email
+      @user.send_activation_email params[:locale]
       flash[:info] = t "flash.activation_mail"
       redirect_to root_url
     else
